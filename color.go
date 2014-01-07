@@ -17,7 +17,7 @@ const (
 )
 
 func colorize(row string, color ColorCode) string {
-	return fmt.Sprintf("%s%s%s", "\033["+color+"m", row, "\033[0m")
+	return fmt.Sprintf("\033[%sm%s\033[0m", color, row)
 }
 
 func Red(row string) string {
