@@ -2,7 +2,6 @@ package color
 
 import (
 	"fmt"
-	"strings"
 )
 
 type ColorCode string
@@ -47,8 +46,4 @@ func Cyan(row string) string {
 
 func White(row string) string {
 	return colorize(row, white)
-}
-
-func Indent(v interface{}) string {
-	return strings.Replace(fmt.Sprintf("%v", v), "\n", "\n    ", -1)
 }
