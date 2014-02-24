@@ -2,6 +2,17 @@
 
 ansi color utility
 
+## color list
+
+```
+RED
+GREEN
+YELLOW
+BLUE
+PINK
+CYAN
+WHITE
+```
 
 ## License
 
