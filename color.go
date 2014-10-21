@@ -16,34 +16,34 @@ const (
 	white            = "1;37"
 )
 
-func colorize(row string, color ColorCode) string {
-	return fmt.Sprintf("\033[%sm%s\033[0m", color, row)
+func colorize(row interface{}, color ColorCode) string {
+	return fmt.Sprintf("\033[%sm%v\033[0m", color, row)
 }
 
-func Red(row string) string {
+func Red(row interface{}) string {
 	return colorize(row, red)
 }
 
-func Green(row string) string {
+func Green(row interface{}) string {
 	return colorize(row, green)
 }
 
-func Yellow(row string) string {
+func Yellow(row interface{}) string {
 	return colorize(row, yellow)
 }
 
-func Blue(row string) string {
+func Blue(row interface{}) string {
 	return colorize(row, blue)
 }
 
-func Pink(row string) string {
+func Pink(row interface{}) string {
 	return colorize(row, pink)
 }
 
-func Cyan(row string) string {
+func Cyan(row interface{}) string {
 	return colorize(row, cyan)
 }
 
-func White(row string) string {
+func White(row interface{}) string {
 	return colorize(row, white)
 }
