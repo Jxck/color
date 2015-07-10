@@ -2,6 +2,8 @@
 
 ansi color utility
 
+![example](example.png)
+
 ## useage
 
 ```go
