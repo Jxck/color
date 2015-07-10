@@ -2,7 +2,7 @@
 
 ansi color utility
 
-![example](example.png)
+<img src="example.png" width="300px">
 
 ## useage
 
